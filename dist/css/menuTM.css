@@ -1,0 +1,44 @@
+.side
+{
+    height: 100%;
+    width: 0; /*sera alterado pelo javascript*/
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden; /*Desativa o scroll horizontal*/
+    padding-top: 60px;
+    transition: 0.5s;
+}
+/* FIM NAVBAR */
+
+.side .close
+{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}   
+
+.side a 
+{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: .3s;
+}
+
+
+/* Para telas menores que 450px; */
+@media screen and (max-heigth: 450px)
+{
+    .side 
+    {
+        padding-top: 15px;
+
+    }
+}
